@@ -2,16 +2,16 @@ import Datepicker from './components/Datepicker'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-12">
+    <div className="min-h-screen bg-purple-50 p-8">
+      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-md overflow-hidden grid grid-cols-12">
         {/* Sidebar */}
-        <aside className="col-span-12 md:col-span-3 lg:col-span-2 bg-white/60 p-6 border-r">
+        <aside className="col-span-12 md:col-span-3 lg:col-span-2 p-6 border-r border-transparent bg-white/0">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 rounded-md bg-purple-300" />
-            <span className="font-semibold">Academy</span>
+            <span className="font-semibold text-gray-700">Academy</span>
           </div>
           <nav className="space-y-3">
-            <button className="w-full text-left px-3 py-2 rounded-lg bg-purple-100 text-purple-700">Dashboard</button>
+            <button className="w-full text-left px-3 py-2 rounded-lg bg-purple-200 text-purple-800 shadow-sm">Dashboard</button>
             <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Courses</button>
             <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Chats</button>
             <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Grades</button>

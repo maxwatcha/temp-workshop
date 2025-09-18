@@ -97,7 +97,7 @@ export default function Datepicker() {
         value={formattedDate}
         onClick={(e) => { e.stopPropagation(); toggleCalendar() }}
         placeholder="Select date"
-        className="w-40 p-2 border border-gray-300 rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-40 p-2 border border-gray-300 rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-500"
       />
 
       {showCalendar && (
@@ -125,8 +125,8 @@ export default function Datepicker() {
                 className={
                   `p-2 cursor-pointer rounded-full ` +
                   (day.otherMonth ? 'text-gray-400 ' : '') +
-                  (isSelected(day) ? 'bg-blue-500 text-white ' : '') +
-                  (!day.otherMonth ? 'hover:bg-blue-100' : '')
+                  (isSelected(day) ? 'bg-purple-500 text-white ' : '') +
+                  (!day.otherMonth ? 'hover:bg-purple-100' : '')
                 }
               >
                 {day.date.getDate()}
