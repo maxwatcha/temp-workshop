@@ -1,30 +1,15 @@
 import Datepicker from './components/Datepicker'
+import Sidebar from './components/Sidebar'
 
 export default function App() {
   return (
     <div className="min-h-screen bg-purple-50 p-8">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-md overflow-hidden grid grid-cols-12">
-        {/* Sidebar */}
-        <aside className="col-span-12 md:col-span-3 lg:col-span-2 p-6 border-r border-transparent bg-white/0">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 rounded-md bg-purple-300" />
-            <span className="font-semibold text-gray-700">Academy</span>
-          </div>
-          <nav className="space-y-3">
-            <button className="w-full text-left px-3 py-2 rounded-lg bg-purple-200 text-purple-800 shadow-sm">Dashboard</button>
-            <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Courses</button>
-            <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Chats</button>
-            <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Grades</button>
-            <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Schedule</button>
-            <button className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100">Settings</button>
-          </nav>
-        </aside>
+        <Sidebar />
 
-        {/* Main area */}
         <main className="col-span-12 md:col-span-9 lg:col-span-10 p-6">
-          {/* Header */}
           <header className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold">Dashboard</h2>
+            <h2 className="text-2xl font-bold text-gray-800">Dashboard</h2>
             <div className="flex items-center gap-4">
               <div className="relative">
                 <input
@@ -40,9 +25,7 @@ export default function App() {
           </header>
 
           <div className="grid grid-cols-12 gap-6">
-            {/* Left main content */}
             <section className="col-span-12 lg:col-span-8">
-              {/* New Courses cards */}
               <div className="mb-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold">New Courses</h3>
@@ -67,7 +50,6 @@ export default function App() {
                 </div>
               </div>
 
-              {/* My Courses list */}
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h4 className="font-semibold mb-3">My Courses</h4>
                 <ul className="space-y-3">
@@ -96,7 +78,6 @@ export default function App() {
               </div>
             </section>
 
-            {/* Right sidebar (profile + calendar) */}
             <aside className="col-span-12 lg:col-span-4 space-y-6">
               <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-300 to-pink-300" />
